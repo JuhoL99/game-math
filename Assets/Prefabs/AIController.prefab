@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3102301769303776082
+--- !u!1 &6079644976764302646
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,55 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 302959945340895219}
-  - component: {fileID: 6072320348712523454}
-  - component: {fileID: 422874401677156598}
+  - component: {fileID: 4334915625815667804}
+  - component: {fileID: 8439134016277538748}
   m_Layer: 0
-  m_Name: KeyboardInput
+  m_Name: AIController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &302959945340895219
+--- !u!4 &4334915625815667804
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3102301769303776082}
+  m_GameObject: {fileID: 6079644976764302646}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.444252, y: 5.8818827, z: 46.596897}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6072320348712523454
+--- !u!114 &8439134016277538748
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3102301769303776082}
+  m_GameObject: {fileID: 6079644976764302646}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fc7be94a77194a45851c4e91dea3437, type: 3}
+  m_Script: {fileID: 11500000, guid: d2c0da691995f9842aa353f487a7b429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tower: {fileID: 0}
+  craneForward: {fileID: 0}
+  towerCrane: {fileID: 0}
   trolley: {fileID: 0}
   cable: {fileID: 0}
---- !u!114 &422874401677156598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3102301769303776082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d7242ac87aed8f41ac95b25327cfcb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  hook: {fileID: 0}
+  concrete: {fileID: 0}
+  trolleyNearLimit: {fileID: 0}
+  trolleyFarLimit: {fileID: 0}

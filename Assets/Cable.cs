@@ -21,10 +21,11 @@ public class Cable : MonoBehaviour
     }
     void Update()
     {
-        transform.position = Vector3.Lerp(heightLimit.position-new Vector3(0,cableLength,0), heightLimit.position, slider.value);
+        Vector3 parentDown = -parentObject.transform.up;
+        transform.position = Vector3.Lerp(heightLimit.position + parentDown * cableLength, heightLimit.position, slider.value);
         transform.rotation = Quaternion.LookRotation(parentObject.TransformVector(relativeAxisZ), parentObject.TransformVector(relativeAxisY));
     }
-    public void CableKeyboardMove(float value)
+    public void CableManualMove(float value)
     {
         movePos += value * Time.deltaTime;
         if (movePos > 1)

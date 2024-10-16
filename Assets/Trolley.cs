@@ -24,7 +24,7 @@ public class Trolley : MonoBehaviour
         transform.position = Vector3.Lerp(nearLimit.position, farLimit.position, slider.value);
         transform.rotation = Quaternion.LookRotation(parentObject.TransformVector(relativeAxisZ), parentObject.TransformVector(relativeAxisY));
     }
-    public void TrolleyKeyboardMove(float value)
+    public void TrolleyManualMove(float value)
     {
         movePos += value * Time.deltaTime;
         if (movePos > 1)

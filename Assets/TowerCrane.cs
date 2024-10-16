@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class TowerCrane : MonoBehaviour
@@ -11,9 +10,9 @@ public class TowerCrane : MonoBehaviour
     {
         transform.Rotate(Vector3.up, value * 5);
     }
-    public void CraneRotation(float value, bool keyboard)
+    public void CraneRotation(float value, bool manual)
     {
-        if(keyboard)
+        if(manual)
             transform.Rotate(Vector3.up, value * rotationSpeed * Time.deltaTime);
     }
 }

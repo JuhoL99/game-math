@@ -9,10 +9,14 @@ public class Hook : MonoBehaviour
     {
         if (connected)
             return;
-        if(other.TryGetComponent<Concrete>(out Concrete concrete))
+        if(other is SphereCollider && other.TryGetComponent<Concrete>(out Concrete concrete))
         {
             concrete.SetParent(this.gameObject.transform);
             connected = !connected;
         }
+    }
+    public void Disconnect()
+    {
+        connected = false;
     }
 }

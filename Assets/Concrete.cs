@@ -24,4 +24,8 @@ public class Concrete : MonoBehaviour
         relativeAxisY = parentObject.transform.InverseTransformVector(transform.up);
         relativeAxisZ = parentObject.transform.InverseTransformVector(transform.forward);
     }
+    public void ClearParent()
+    { 
+        parentObject = null; 
+    }
 }

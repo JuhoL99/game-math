@@ -25,7 +25,7 @@ public class KeyboardInputOverride : MonoBehaviour
     {
         vertical = Input.GetAxis("Vertical");
         if (vertical != 0)
-            trolley.TrolleyKeyboardMove(vertical);
+            trolley.TrolleyManualMove(vertical);
     }
     private void MoveCable()
     {
@@ -35,6 +35,6 @@ public class KeyboardInputOverride : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
             value = 1f;
         if(value != 0)
-            cable.CableKeyboardMove(value);
+            cable.CableManualMove(value);
     }
 }
