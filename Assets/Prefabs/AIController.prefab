@@ -44,7 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c0da691995f9842aa353f487a7b429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  craneForward: {fileID: 0}
   towerCrane: {fileID: 0}
   trolley: {fileID: 0}
   cable: {fileID: 0}
@@ -52,3 +51,4 @@ MonoBehaviour:
   concrete: {fileID: 0}
   trolleyNearLimit: {fileID: 0}
   trolleyFarLimit: {fileID: 0}
+  debugMode: 0
